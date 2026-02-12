@@ -19,13 +19,13 @@ The repository is organized by experimental module to provide a clear, professio
 ```text
 .
 ├── v5-specific-heat-gas-thermometer/       # Module v5
-│   ├── data/                               # Raw experimental CSVs
-│   ├── plots/                              # Generated PDFs and PNGs
-│   ├── v5_specific_heat.py                 # Adiabatic exponent analysis
-│   ├── v5_gas_thermometer_heating.py       # Absolute zero (Heating)
-│   └── v5_gas_thermometer_cooling.py       # Absolute zero (Cooling)
+│   ├── data/                               # Raw experimental data as CSVs
+│   ├── plots/                              # Generated PDFs 
+│   ├── v5_specific_heat.py                 # Specific Heat of Air analysis
+│   ├── v5_gas_thermometer_heating.py       # Absolute zero Temperature (Heating)
+│   └── v5_gas_thermometer_cooling.py       # Absolute zero Temperature (Cooling)
 ├── v7_vapor-pressure-of-water/             # Module v7
-│   ├── data/                               # Pressure & Resistance datasets
+│   ├── data/                               # Pressure & Resistance datasets as CSVs
 │   ├── plots/                              # Arrhenius & Vapor pressure plots
 │   ├── v7_heating.py                       # Enthalpy analysis (Heating)
 │   └── v7_cooling.py                       # Enthalpy analysis (Cooling)
