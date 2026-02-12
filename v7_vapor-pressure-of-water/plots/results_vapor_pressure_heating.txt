@@ -1,0 +1,15 @@
+
+------------------------------------------------------------
+Analysis Results: Vapor Pressure (Heating)
+Date: 2026-02-12 13:26
+File Analyzed: data/v7_heating.csv
+------------------------------------------------------------
+Fit Parameters:
+  Slope (m):     -4393.7472+/-16.1273 K
+  Intercept (c): 12.3374+/-0.0361
+
+Physics Results:
+  Enthalpy of Vaporization: 36.53+/-0.13 kJ/mol
+  Literature Value (100°C): 40.66 kJ/mol
+  Deviation:                30.8 sigma
+------------------------------------------------------------

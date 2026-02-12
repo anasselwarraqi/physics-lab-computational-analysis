@@ -1,0 +1,15 @@
+
+------------------------------------------------------------
+Analysis Results: Gas Thermometer (Cooling)
+Date: 2026-02-12 13:22
+File Analyzed: data/v5_cooling.csv
+------------------------------------------------------------
+Fit Parameters:
+  Slope (m):     5.3382+/-0.0606 hPa/°C
+  Intercept (b): 860.3617+/-2.1142 hPa
+
+Physics Results:
+  Calculated Absolute Zero: -161.17+/-2.18 °C
+  Literature Value:         -273.15 °C
+  Deviation:                51.4 sigma
+------------------------------------------------------------

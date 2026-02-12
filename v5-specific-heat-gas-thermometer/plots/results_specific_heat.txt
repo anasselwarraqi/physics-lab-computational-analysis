@@ -1,0 +1,18 @@
+
+------------------------------------------------------------
+Analysis Results: Specific Heat of Air
+Date: 2026-02-12 13:11
+File Analyzed: data/v5_specific_heat.csv
+------------------------------------------------------------
+Fit Parameters:
+  Slope (m):     105.47+/-2.07 Pa/J
+  Intercept (b): -14.40+/-2.75 Pa
+
+Physics Results:
+  Adiabatic Exponent (kappa): 1.3375+/-0.0151
+  Literature Value (Air):     1.400
+  Deviation:                  4.1 sigma
+
+  Degrees of Freedom (f):     5.926+/-0.266
+  Expected Value (Diatomic):  5.00
+------------------------------------------------------------
