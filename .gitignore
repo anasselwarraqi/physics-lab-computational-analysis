@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm / IntelliJ
+.idea/
+*.iws
+*.iml
+
+# macOS System Files
+.DS_Store
+
+# Environments
+.venv/
+venv/
+env/
+
+# Data & temporary results (optional)
+# Keep these lines if you want to only upload final CSVs manually
+*.log
+*.tmpf
