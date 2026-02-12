@@ -1,17 +1,35 @@
-🔬 Physics Lab Computational AnalysisUniversity of Göttingen | B.Sc. PhysicsThis repository contains automated data analysis scripts developed for the Experimental Physics lab modules. The project focuses on replacing manual calculations with high-precision scientific computing, utilizing weighted linear regressions and automatic error propagation.🚀 FeaturesRigorous Error Propagation: Full implementation of the uncertainties library to handle covariance matrices and Gaussian error propagation.Effective Variance Method: Advanced fitting techniques that account for uncertainties in both the independent ($x$) and dependent ($y$) variables.Automated Visualization: High-resolution plotting with automated folder management for professional reporting.Data Integrity: Structured data handling using pandas for clean ingestion of experimental CSV files.📂 Project StructureThe repository is organized by experimental module to ensure a professional and navigable portfolio:Plaintext.
+# 🔬 Physics Lab Computational Analysis
+### University of Göttingen | B.Sc. Physics
+
+This repository contains automated data analysis scripts developed for Experimental Physics lab modules at the University of Göttingen. The project replaces manual calculations with high-precision scientific computing, utilizing **weighted linear regressions**, **effective variance modeling**, and **automatic error propagation**.
+
+---
+
+## 🚀 Core Features
+* **Rigorous Error Propagation:** Implementation of the `uncertainties` library to handle covariance matrices and Gaussian error propagation across all physical constants.
+* **Effective Variance Method:** Advanced fitting techniques that account for uncertainties in both the independent ($x$) and dependent ($y$) variables, critical for Arrhenius plots.
+* **Automated Visualization:** Scripts generate high-resolution plots (300 DPI) and automatically manage directory structures for `/plots` and `/data`.
+* **Professional Data Handling:** Uses `pandas` for clean ingestion and cleaning of experimental CSV datasets.
+
+---
+
+## 📂 Project Structure
+The repository is organized by experimental module to provide a clear, professional portfolio for academic and industrial review:
+
+```text
+.
 ├── Lab-analysis/
-│   ├── v5-specific-heat-gas-thermometer/       # Specific Heat & Absolute Zero
+│   ├── v5-specific-heat-gas-thermometer/       # Module v5
 │   │   ├── data/                               # Raw experimental CSVs
 │   │   ├── plots/                              # Generated PDFs and PNGs
-│   │   └── v5_specific_heat.py                 # Main analysis scripts
-│   └── v7-vapor-pressure-of-water/             # Thermodynamics of Water
-│       ├── data/                               # Pressure/Ohmzahl datasets
-│       ├── plots/                              # Arrhenius plots
-│       └── v7_heating_improved.py              # Effective Variance analysis
+│   │   ├── v5_specific_heat.py                 # Adiabatic exponent analysis
+│   │   ├── v5_gas_thermometer_heating.py       # Absolute zero (Heating)
+│   │   └── v5_gas_thermometer_cooling.py       # Absolute zero (Cooling)
+│   └── v7-vapor-pressure-of-water/             # Module v7
+│       ├── data/                               # Pressure & Resistance datasets
+│       ├── plots/                              # Arrhenius & Vapor pressure plots
+│       ├── v7_heating_improved.py              # Enthalpy analysis (Heating)
+│       └── v7_cooling_improved.py              # Enthalpy analysis (Cooling)
 ├── .gitignore                                  # Python-standard junk filter
 ├── LICENSE                                     # MIT License
-└── README.md                                   # Documentation
-📊 Experimental Modules1. Specific Heat of Air (Module v5)Determining the adiabatic exponent ($\kappa$) and degrees of freedom ($f$) for air.Theory: $\Delta p = \frac{\kappa - 1}{V} \cdot \Delta Q$.Results: Automatically calculates $\kappa$ and provides a $\sigma$-deviation check against literature values ($1.40$).2. Gas Thermometer (Module v5)Determination of Absolute Zero ($T_0$) through the cooling and heating phases of an ideal gas.Logic: Linear extrapolation of $P(T)$ to zero pressure using correlated fit parameters.3. Vapor Pressure of Water (Module v7)Analysis of the Clausius-Clapeyron relation to determine the Enthalpy of Vaporization ($\Delta H_{vap}$).Advanced Fitting: Uses an Arrhenius plot ($\ln(p)$ vs $1/T$) with effective variance weighting to handle high-temperature measurement fluctuations.📈 Visual ResultsArrhenius Analysis (Module v7)Example of a cooling phase fit showing strong agreement with theoretical vapor pressure curves.🛠️ Installation & UsageClone the repository:Bashgit clone https://github.com/anasselwarraqi/physics-lab-computational-analysis.git
-Install dependencies:Bashpip install numpy pandas matplotlib scipy uncertainties
-Run an analysis:Bashpython Lab-analysis/v7-vapor-pressure-of-water/v7_heating_improved.py
-📜 LicenseThis project is licensed under the MIT License - see the LICENSE file for details.Author: Anass El WarraqiDate: February 2026
+└── README.md                                   # Project Documentation
