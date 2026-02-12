@@ -18,18 +18,18 @@ The repository is organized by experimental module to provide a clear, professio
 
 ```text
 .
-├── Lab-analysis/
-│   ├── v5-specific-heat-gas-thermometer/       # Module v5
-│   │   ├── data/                               # Raw experimental CSVs
-│   │   ├── plots/                              # Generated PDFs and PNGs
-│   │   ├── v5_specific_heat.py                 # Adiabatic exponent analysis
-│   │   ├── v5_gas_thermometer_heating.py       # Absolute zero (Heating)
-│   │   └── v5_gas_thermometer_cooling.py       # Absolute zero (Cooling)
-│   └── v7-vapor-pressure-of-water/             # Module v7
-│       ├── data/                               # Pressure & Resistance datasets
-│       ├── plots/                              # Arrhenius & Vapor pressure plots
-│       ├── v7_heating_improved.py              # Enthalpy analysis (Heating)
-│       └── v7_cooling_improved.py              # Enthalpy analysis (Cooling)
-├── .gitignore                                  # Python-standard junk filter
-├── LICENSE                                     # MIT License
-└── README.md                                   # Project Documentation
+├── v5-specific-heat-gas-thermometer/       # Module v5
+│   ├── data/                               # Raw experimental CSVs
+│   ├── plots/                              # Generated PDFs and PNGs
+│   ├── v5_specific_heat.py                 # Adiabatic exponent analysis
+│   ├── v5_gas_thermometer_heating.py       # Absolute zero (Heating)
+│   └── v5_gas_thermometer_cooling.py       # Absolute zero (Cooling)
+├── v7_vapor-pressure-of-water/             # Module v7
+│   ├── data/                               # Pressure & Resistance datasets
+│   ├── plots/                              # Arrhenius & Vapor pressure plots
+│   ├── v7_heating.py                       # Enthalpy analysis (Heating)
+│   └── v7_cooling.py                       # Enthalpy analysis (Cooling)
+├── .gitignore                              # Python-standard junk filter
+├── LICENSE                                 # MIT License
+├── README.md                               # Project Documentation
+└── requirements.txt                        # Dependency List
